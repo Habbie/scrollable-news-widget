@@ -47,6 +47,8 @@ import android.content.Context;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
+
+import fr.gdi.android.news.Constants;
 import fr.gdi.android.news.model.Enclosure;
 import fr.gdi.android.news.model.Feed;
 import fr.gdi.android.news.model.Item;
@@ -130,6 +132,7 @@ public class FeedHandler extends DefaultHandler
     
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException
     {
+        Log.d(Constants.PACKAGE, "startElement / "+uri+" / "+localName+" / "+qName);
         // Only consider elements from allowed third-party namespaces
         if (NAMESPACES.contains(uri))
         {
@@ -173,6 +176,7 @@ public class FeedHandler extends DefaultHandler
             }
             else if (hasType(value, "link")) //$NON-NLS-1$
             {
+                isLink = true;
                 // Get attributes from link element for Atom format
                 if (attributes != null)
                 {
@@ -185,10 +189,15 @@ public class FeedHandler extends DefaultHandler
                             mEnclosure = new Enclosure();
                             isEnclosure = true;
                         }
+
+                        Log.d(Constants.PACKAGE, "rel="+attributes.getValue("rel"));
+                        if (hasType(attributes.getValue("rel"), "related")) {
+                            Log.d(Constants.PACKAGE, "rel=related, setting isLink to False");
+                            isLink = false;
+                        }
                     }
                     mHrefAttribute = attributes.getValue("href"); //$NON-NLS-1$
                 }
-                isLink = true;
             }
             else if (hasType(value, "pubDate", "published", "date"))  //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
             {
@@ -264,6 +273,8 @@ public class FeedHandler extends DefaultHandler
     
     public void endElement(String uri, String localName, String qName) throws SAXException
     {
+        Log.d(Constants.PACKAGE, "endElement / "+uri+" / "+localName+" / "+qName+" / "+mSb.toString());
+
         // Only consider elements from allowed third-party namespaces
         if (NAMESPACES.contains(uri))
         {
@@ -337,13 +348,15 @@ public class FeedHandler extends DefaultHandler
                         }
                         else if (mItem.getLink() == null || TextUtils.equals(mMimeAttribute, "text/html")) //$NON-NLS-1$
                         {
-                            if (mHrefAttribute != null) 
-                            {
-                                mItem.setLink(new URL(mHrefAttribute));
-                            }
-                            else 
-                            {
-                                mItem.setLink(new URL(mSb.toString().trim()));
+                            if (isLink) {
+                                if (mHrefAttribute != null) {
+                                    Log.d(Constants.PACKAGE, "replacing link [" + mItem.getLinkURL() + "] with link [" + mHrefAttribute + "]");
+                                    mItem.setLink(new URL(mHrefAttribute));
+                                } else {
+                                    Log.d(Constants.PACKAGE, "replacing link [" + mItem.getLinkURL() + "] with link [" + mSb.toString().trim() + "]");
+
+                                    mItem.setLink(new URL(mSb.toString().trim()));
+                                }
                             }
                         }
                     }
