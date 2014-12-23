@@ -47,8 +47,6 @@ import android.content.Context;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
-
-import fr.gdi.android.news.Constants;
 import fr.gdi.android.news.model.Enclosure;
 import fr.gdi.android.news.model.Feed;
 import fr.gdi.android.news.model.Item;
@@ -132,7 +130,6 @@ public class FeedHandler extends DefaultHandler
     
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException
     {
-        Log.d(Constants.PACKAGE, "startElement / "+uri+" / "+localName+" / "+qName);
         // Only consider elements from allowed third-party namespaces
         if (NAMESPACES.contains(uri))
         {
@@ -190,9 +187,7 @@ public class FeedHandler extends DefaultHandler
                             isEnclosure = true;
                         }
 
-                        Log.d(Constants.PACKAGE, "rel="+attributes.getValue("rel"));
                         if (hasType(attributes.getValue("rel"), "related")) {
-                            Log.d(Constants.PACKAGE, "rel=related, setting isLink to False");
                             isLink = false;
                         }
                     }
@@ -273,8 +268,6 @@ public class FeedHandler extends DefaultHandler
     
     public void endElement(String uri, String localName, String qName) throws SAXException
     {
-        Log.d(Constants.PACKAGE, "endElement / "+uri+" / "+localName+" / "+qName+" / "+mSb.toString());
-
         // Only consider elements from allowed third-party namespaces
         if (NAMESPACES.contains(uri))
         {
@@ -350,11 +343,10 @@ public class FeedHandler extends DefaultHandler
                         {
                             if (isLink) {
                                 if (mHrefAttribute != null) {
-                                    Log.d(Constants.PACKAGE, "replacing link [" + mItem.getLinkURL() + "] with link [" + mHrefAttribute + "]");
                                     mItem.setLink(new URL(mHrefAttribute));
-                                } else {
-                                    Log.d(Constants.PACKAGE, "replacing link [" + mItem.getLinkURL() + "] with link [" + mSb.toString().trim() + "]");
-
+                                }
+                                else
+                                {
                                     mItem.setLink(new URL(mSb.toString().trim()));
                                 }
                             }
