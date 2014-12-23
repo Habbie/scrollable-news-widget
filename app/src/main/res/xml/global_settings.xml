@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="180"
+        android:inputType="number"
+        android:key="refresh_interval_in_minutes"
+        android:persistent="true"
+        android:summary="@string/refresh_interval_summary"
+        android:title="@string/refresh_interval" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="auto_mark_as_read"
+        android:persistent="true"
+        android:summary="@string/auto_mark_read_summary"
+        android:title="@string/auto_mark_read" />
+    
+    <CheckBoxPreference
+        android:key="only_update_if_wifi_on"
+        android:persistent="true"
+        android:summary="@string/wifi_only_summary"
+        android:title="@string/wifi_only" />
+    
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="eager_fetch_thumbnails"
+        android:persistent="true"
+        android:summary="@string/fetch_thumbnails_summary"
+        android:title="@string/fetch_thumbnails" />
+
+    <EditTextPreference
+        android:defaultValue="240"
+        android:inputType="number"
+        android:key="embedded_image_min_width"
+        android:persistent="true"
+        android:summary="@string/image_min_width_summary"
+        android:title="@string/image_min_width" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="debug_mode"
+        android:persistent="true"
+        android:summary="@string/debug_mode_summary"
+        android:title="@string/debug_mode" />
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="prefer_shape_over_ninepatch"
+        android:persistent="true"
+        android:summary="@string/prefer_shape_over_ninepatch_summary"
+        android:title="@string/prefer_shape_over_ninepatch" />
+    
+</PreferenceScreen>

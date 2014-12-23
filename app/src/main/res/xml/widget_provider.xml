@@ -1,0 +1,12 @@
+<appwidget-provider 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:minWidth="250dp"
+  android:minHeight="250dp"
+  android:initialLayout="@layout/widget"
+  android:previewImage="@drawable/widget_preview"
+  android:updatePeriodMillis="0"
+  android:resizeMode="vertical|horizontal"
+  android:configure="fr.gdi.android.news.activity.ConfigurationActivity"
+  android:minResizeWidth="250dp"
+  android:minResizeHeight="40dp"
+/>

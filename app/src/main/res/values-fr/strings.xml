@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Scrollable News</string>
+    
+    <!-- shared values -->
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Annuler</string>
+    <string name="error">Erreur</string>
+    <string name="success">Succès</string>
+    <string name="info">Info</string>
+    <string name="warning">Avertissement</string>
+    <string name="details">Détails</string>
+    <string name="delete">Supprimer</string>
+    <string name="delete_all">Supprimer tous</string>
+    <string name="deleting">Supression en cours</string>
+    <string name="preview">Prévisualiser</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="import_action">Import</string>
+    <string name="export_action">Export</string>
+    <string name="add_action">Créer</string>
+   	<string name="reload_action">Rafraîchir</string>
+   	
+    <string name="name_conflict_import_warning">mais des conflits de nom ont été détectés</string>
+   	
+    <string name="whats_new_option_text">Nouveautés</string>
+    
+    <string name="loading">Chargement en cours&#8230;</string> 
+     
+    <!-- activity labels -->
+    <string name="activity_story_list">List des articles</string>
+    <string name="activity_story_details">Lire</string>
+    <string name="activity_file_picker">Sélectionnez un fichier</string>
+    <string name="activity_color_picker">Choisissez une couleur</string>
+    <string name="activity_theme_details">Modifier le thème</string>
+    <string name="activity_behaviour_details">Modifier le comportement</string>
+    
+    <!-- object names -->
+    <string name="object_behaviour">comportement</string>
+    <string name="object_theme">thème</string>
+    <string name="object_feed">flux</string>
+	
+    <!-- file dialog -->
+    <string name="location">Emplacement</string>
+    <string name="cant_read_folder">Le répertoire ne peut être lu</string>
+    <string name="nnew">Créer</string>
+    <string name="select">Sélectionner</string>
+    <string name="file_name">Nom de fichier :</string>
+    <string name="create">Enregistrer</string>
+    <string name="no_data">Pas de données</string>
+    
+    <!-- main activity -->
+    <string name="main_tab_feeds">Flux</string>
+    <string name="main_tab_themes">Thèmes</string>
+    <string name="main_tab_behaviours">Actions</string>
+    <string name="main_tab_favorites">Favoris</string>
+    <string name="main_tab_settings">Options</string>
+    <string name="main_tab_stats">Stats</string>
+    <string name="main_tab_about">A propos</string>
+    
+    <!-- configuration -->
+    <string name="config_widget_not_saved">Configuration NON sauvegardée!</string>
+    <string name="config_widget_validation_errors">Erreurs de validation</string>
+    <string name="config_widget_select_behaviour">Choix du comportement</string>
+    <string name="config_widget_select_theme">Choix du thème</string>
+    <string name="config_widget_select_feeds">Choix des flux</string>
+    <string name="config_widget_empty_collection">Pas de %1$s trouvé! Veuillez ajouter au préalable au moins un %2$s.</string>
+    <string name="config_widget_behaviour_not_set">Comportement non spécifié</string>
+    <string name="config_widget_theme_not_set">Thème non spécifié</string>
+    <string name="config_widget_no_feed_selected">Aucun flux sélectionné</string>
+	
+    <!-- default values -->
+    <string name="defaults_dark_theme">Thème par défaut (sombre)</string>
+    <string name="defaults_light_theme">Thème par défaut (lumineux)</string>
+    <string name="defaults_widget_title">A la une&#8230; (%d)</string>
+    <string name="defaults_behaviour_name">Nouveau comportement</string>
+    <string name="defaults_theme_name">Nouveau thème</string>
+    
+    <!-- mobilizer -->
+    <string name="None">Aucun</string>
+    <string name="InstaPaper">InstaPaper</string>
+    <string name="ReadItLater">ReadItLater</string>
+    <string name="Google">Google</string>
+    
+    <!--color picker -->
+    <string name="color_picker_title">Choisissez une couleur</string>
+    <string name="color_picker_alpha">Alpha</string>
+    
+    <!-- behaviours -->
+    <string name="behaviour_import_title">Importer des comportements</string>
+    <string name="behaviour_delete_ref">Impossible de supprimer le comportement. Est-il utilisé par un widget ?</string>
+    <string name="behaviour_export_success">Comportements exportés avec succès vers : %1$s</string>
+    <string name="behaviour_export_failure">Impossible d\'exporter les comportements</string>
+    <string name="behaviour_import_success">Les comportements sélectionnés ont été importés avec succès</string>
+    <string name="behaviour_import_failure">Aucun comportement importé du fait d\'un conflit de nom</string>
+    <string name="behaviour_import_empty">Le fichier sélectionné ne définit aucun comportement</string>
+    <string name="behaviour_import_error">Impossible de lire le fichier sélectionné</string>
+    <string name="behaviour_validation_name_not_set">Le nom du comportement n\'est pas renseigné</string>
+    <string name="behaviour_validation_name_exists">Un comportement portant ce nom existe déjà</string>
+    <string name="distribute_evenly">Distribution uniforme</string>
+    <string name="distribute_evenly_summary">Répartir uniformément les articles par flux</string>
+    
+    <!-- feeds  -->
+    <string name="feed_saving_message">Sauvegarde des flux en cours&#8230;</string>
+    <string name="feed_saving_title">Enregistrement&#8230;</string>
+    <string name="feed_delete_confirm">La suppression ne pourra être annulée. Souhaitez-vous continuer ?</string>
+    <string name="feed_add_title">Nouveau flux</string>
+    <string name="feed_open_in_browser">Souhaitez-vous ouvrir l\'URL dans un navigateur web ?</string>
+    
+    <string name="feed_invalid_parameters_title">Paramètres invalides</string>
+    <string name="feed_invalid_parameters_details">L\'URL spécifiée ne semble être invalide.</string>
+    <string name="feed_validation_failure_title">La validation a échoué</string>
+    <string name="feed_validation_failure_details">Impossible de se connecter au flux.</string>
+    <string name="feed_validating_title">Validation du flux</string>
+    <string name="feed_validating_message">Connexion au flux en cours&#8230;</string>
+    <string name="feed_missing_url_title">Paramètre manquant</string>
+    <string name="feed_missing_url_message">Veuillez entrer une URL valide.</string>
+    
+    <string name="feed_export_success">Flux exportés avec succès vers : </string>
+    <string name="feed_export_failure">Impossible d\'exporter les flux vers : </string>
+    <string name="feed_export_error">Impossible d\'enregistrer le flux.</string>
+    <string name="feed_import_title">Choisissez les flux à importer.</string>
+    <string name="feed_import_success">%1$s flux ont été importés sans validation.</string>
+
+    <string name="feed_import_task_title">Import&#8230;</string>
+    <string name="feed_import_task_message">Import des flux en cours.</string>
+    <string name="feed_export_task_title">Export&#8230;</string>
+    <string name="feed_export_task_message">Export des flux en cours.</string>
+    
+    <string name="feed_import_result_invalid_file">Le fichier sélectionné ne semble pas être valide.</string>
+    <string name="feed_import_result_no_feed_found">Le fichier sélectionné ne contient aucune définition de flux.</string>
+    <string name="feed_import_result_parse_error">Une erreur est survenue à la lecture du fichier sélectionné.</string>
+    
+    <string name="feed_search_title">Recherche</string>
+    <string name="feed_search_prompt">Mots-clés</string>
+    <string name="feed_search_no_result">Aucun flux correspondant aux mots-clés saisis n\'a été trouvé</string>
+    <string name="feed_search_match_found">%1$d flux trouvés</string>
+    <string name="feed_searching_title">Recherche&#8230;</string>
+    <string name="feed_searching_message">Connexion au service de recherche.</string>
+    <string name="feed_lookup_title">Extraction de flux</string>
+    <string name="feed_lookup_prompt">Site web</string>
+    <string name="feed_lookup_message">Connexion au site web</string>
+    <string name="feed_connect_title">Connexion au flux&#8230;</string>
+    <string name="feed_connect_message">Veuillez patienter pendant le chargement du flux.</string>
+    <string name="feed_connect_error">Impossible de se connecter au flux</string>
+    <string name="feed_connect_save_failure">Une erreur est survenue lors de la sauvegarde des articles.</string>
+    
+    <!-- items -->
+    <string name="item_read_story">Lire l\'article</string>
+    <string name="item_mark_read">Marquer comme lu</string>
+    <string name="item_mark_unread">Marquer comme non lu</string>
+    <string name="item_mark_all_read">Marquer tous comme lus</string>
+    <string name="item_add_to_favorites">Ajouter aux favoris</string>
+    <string name="item_remove_from_favorites">Supprimer des favoris</string>
+    <string name="item_share_option">Partager&#8230;</string>
+    <string name="item_share_title">Partager via&#8230;</string>
+    <string name="item_source">Source :</string>
+    
+    <!-- stats -->
+    <string name="stat_counting">Counting&#8230;</string>
+    <string name="stat_delete_app_cache">Vider le cache applicatif</string>
+    <string name="stat_delete_thumbnails">Supprimer les miniatures</string>
+    <string name="stat_delete_all_news">Supprimer tous les articles</string>
+    <string name="stat_confirm_message">Cette opération ne peut être annulée. Souhaitez-vous tout de même continuer ?</string>
+    
+    <!-- themes -->
+    <string name="theme_import_title">Importer des themes</string>
+    <string name="theme_delete_ref">Impossible de supprimer le thème. Est-il utilisé par un widget ?</string>
+    <string name="theme_export_success">Thèmes exportés avec succès vers : %1$s</string>
+    <string name="theme_export_failure">Impossible d\'exporter les thèmes</string>
+    <string name="theme_import_empty">Le fichier sélectionné ne déclare aucun thème</string>
+    <string name="theme_import_error">Impossible de lire le fichier sélectionné</string>
+    <string name="theme_import_failure">Aucun thème importé du fait d\'un conflit de nom</string>
+    <string name="theme_import_success">Les thèmes sélectionnés ont été importés avec succès</string>
+    <string name="theme_validation_name_not_set">Le nom du thème n\'est pas renseigné</string>
+    <string name="theme_validation_name_exists">Un thème portant ce nom existe déjà</string>
+    <string name="theme_not_saved_invalid_state">Thème non sauvegardé (état invalide).</string>
+    
+    <!-- utils -->
+    <string name="utils_shorten_url_title">Réduction du lien</string>
+    <string name="utils_shorten_url_message">L\'URL est en cours de réduction&#8230;</string>
+    
+    <!--  theme preferences -->
+    <string name="theme_name">Nom du thème</string>
+    <string name="theme_name_summary">Permet d\'identifier le thème (requis). Doit être unique.</string>
+    <string name="screen_global_appearance">Appearance globale</string>
+    <string name="screen_global_appearance_summary">Personnaliser l\'apparence</string>
+    <string name="widget_background_color">Couleur du fond</string>
+    <string name="widget_background_color_summary">La couleur de fond du widget</string>
+    <string name="widget_background_color_add">Choisissez une couleur</string>
+    <string name="widget_background_opacity">Opacité du fond</string>
+    <string name="widget_background_opacity_summary">L\'opacité de fond du widget  (0 : transparent, 255 : opaque)</string>
+    <string name="widget_background_opacity_add">Modifier l\'opacité</string>
+    <string name="widget_rounded_corners">Coins arrondis</string>
+    <string name="widget_rounded_corners_summary">Utiliser des coins arrondis</string>
+    <string name="widget_show_title">Afficher l\'en-tête</string>
+    <string name="widget_show_title_summary">Affiche la barre de titre du widget</string>
+    <string name="widget_num_columns">Nombre de colonnes</string>
+    <string name="widget_num_columns_summary">Pour afficher les articles sous forme de grille</string>
+    <string name="date_format">Format de date</string>
+    <string name="date_format_summary">Comment les dates doivent-elles être formattées</string>
+    <string name="date_format_add">Modifier le format de date</string>
+    <string name="widget_title_color">Couleur d\'en-tête</string>
+    <string name="widget_title_color_summary">La couleur du texte de la barre de titre</string>
+    <string name="story_title_appearance">Titre des articles</string>
+    <string name="story_title_appearance_summary">Personnaliser l\'apparence du titre</string>
+    <string name="story_title_color">Couleur</string>
+    <string name="story_title_color_summary">Couleur de base du titre. Eventuellemen surchargée par la couleur du flux.</string>
+    <string name="story_title_font_size">Taille</string>
+    <string name="story_title_font_size_summary">Taille de police du titre </string>
+    <string name="story_title_font_size_add">Taille de police</string>
+    <string name="story_title_uppercase">Majuscules</string>
+    <string name="story_title_uppercase_summary">Afficher le titre des articles en majuscules.</string>
+    <string name="hide_story_title">Masquer le titre</string>
+    <string name="hide_story_title_summary">Cocher pour masquer le titre</string>
+    <string name="story_title_max_lines">Nombre de lignes</string>
+    <string name="story_title_max_lines_summary">Le nombre maximum de lignes de titre</string>
+    <string name="story_title_max_lines_add">Nombre de lignes</string>
+    <string name="story_description_appearance">Corps des articles</string>
+    <string name="story_description_appearance_summary">Personnaliser l\'apparence du corps des articles</string>
+    <string name="story_description_color">Couleur</string>
+    <string name="story_description_color_summary">Couleur du corps des articles</string>
+    <string name="story_description_font_size">Taille</string>
+    <string name="story_description_font_size_summary">Taille de police du corps</string>
+    <string name="story_description_font_size_add">Taille de police</string>
+    <string name="story_description_max_words">Nombre de mots</string>
+    <string name="story_description_max_words_summary">Le nombre de mots maximum affichés dans la description de l\'article</string>
+    <string name="story_description_max_words_add">Nombre de mots</string>
+    <string name="story_footer_appearance">Pied d\'article</string>
+    <string name="story_footer_appearance_summary">Personnaliser l\'apparence du pied des articles</string>
+    <string name="story_footer_show">Visible</string>
+    <string name="story_footer_show_summary">Afficher le pied des articles</string>
+    <string name="story_footer_uppercase">Majuscules</string>
+    <string name="story_footer_uppercase_summary">Afficher le pied des articles en majuscules</string>
+    <string name="story_footer_font_size">Taille</string>
+    <string name="story_footer_font_size_summary">Taille de police du pied des articles</string>
+    <string name="story_footer_font_size_add">Taille de police</string>
+    <string name="story_author_color">Couleur de l\'auteur</string>
+    <string name="story_author_color_summary">Couleur de texte utilisée pour l\'auteur de l\'article</string>
+    <string name="story_date_color">Couleur de la date</string>
+    <string name="story_date_color_summary">Couleur de texte utilisée pour la date de l\'article</string>
+    <string name="layout_tweak">Mise en forme</string>
+    <string name="layout_tweak_summary">Personnaliser la mise en forme</string>
+    <string name="story_layout">Modèle</string>
+    <string name="story_layout_summary">Le modèle de mise en forme</string>
+    <string name="thumbnail_size">Taille des miniatures</string>
+    <string name="thumbnail_size_summary">Largeur des miniatures si visibles</string>
+    
+    <!-- behaviour preferences -->
+    <string name="behaviour_name">Nom du comportement</string>
+    <string name="behaviour_name_summary">Permet d\'identifier le comportement (requis). Doit être unique.</string>
+    <string name="story_count">Nombre d\'articles</string>
+    <string name="story_count_summary">Le nombre d\'articles maximum affichés dans un widget</string>
+    <string name="mobilizer_service">Service de site mobile</string>
+    <string name="mobilizer_service_summary">Définit le service de réécriture mobile de page</string>
+    <string name="builtin_browse">Navigateur embarqué</string>
+    <string name="builtin_browse_summary">Utiliser le lecteur d\'article de Scrollable News</string>
+    <string name="force_author">Forcer l\'auteur</string>
+    <string name="force_author_summary">Utiliser le titre du flux à la place de l\'auteur réel de l\'article</string>
+    <string name="read_stories">Masquer les articles lus</string>
+    <string name="read_stories_summary">Les articles déjà lus ne seront pas affichés</string>
+    <string name="parse_story_body">Examiner le contenu de l\'article</string>
+    <string name="parse_story_body_summary">Rechercher si besoin les miniatures dans le corps de l\'article (opération coûteuse en batterie et en bande passante)</string>
+    <string name="clear_before_load">Nettoyer avant chargement</string>
+    <string name="clear_before_load_summary">Supprimer les articles avant d\'en charger de nouveaux</string>
+    
+    <!-- global settings -->
+    <string name="refresh_interval">Fréquence de mise-à-jour</string>
+    <string name="refresh_interval_summary">A quelle fréquence les flux doivent-ils être actualisés (en minutes)</string>
+    <string name="auto_mark_read">Marquer comme lu</string>
+    <string name="auto_mark_read_summary">Automatiquement marquer les articles comme lus</string>
+    <string name="wifi_only">WIFI uniquement</string>
+    <string name="wifi_only_summary">Ne rafraîchir les flux que si le WIFI est actif</string>
+    <string name="fetch_thumbnails">Récupérer les miniatures au plus tôt</string>
+    <string name="fetch_thumbnails_summary">Charger les miniatures dès que possible</string>
+    <string name="image_min_width">Taille des miniatures</string>
+    <string name="image_min_width_summary">Largeur minimale des images à considérer</string>
+    <string name="debug_mode">Debug</string>
+    <string name="debug_mode_summary">Activer le mode debug</string>
+    <string name="prefer_shape_over_ninepatch">Eviter les "9-patch"</string>
+    <string name="prefer_shape_over_ninepatch_summary">Utilisée seulement lorsque l\'option "Coins arrondis" est active. Améliore sensiblement l\'aspect graphique et l\'extensibilité mais peut engendrer des effets sur certains appareils.</string>
+    
+    <!-- widget config -->
+    <string name="launch_main_activity">Préférences</string>
+    <string name="launch_main_activity_summary">Modifier les thèmes, les comportements et les flux.</string>
+    <string name="widget_configuration">Configuration du widget</string>
+    <string name="widget_title">Titre</string>
+    <string name="widget_title_summary" formatted="false">Le titre du widget. Utilisez %d pour afficher la date de mise-à-jour.</string>
+    <string name="behaviour">Comportement</string>
+    <string name="behaviour_summary">Le comportement du widget.</string>
+    <string name="theme">Thème</string>
+    <string name="theme_summary">L\'aspect du widget.</string>
+    <string name="feeds">Flux</string>
+    <string name="feeds_summary">Quels flux afficher</string>
+    
+    <!-- statistics layout -->
+    <string name="database">Bases de données</string>
+    <string name="feed_count">Nombre de flux</string>
+    <string name="items_saved">Articles sauvegardés</string>
+    <string name="items_read">Articles lus</string>
+    <string name="favorite_stories">Nombre de favoris</string>
+    <string name="active_feed">Flux le plus actif</string>
+    <string name="cache">Cache</string>
+    <string name="space_used">Espace total utilisé</string>
+    <string name="sd_space_used">Espace utilisé sur SD</string>
+    <string name="internal_space_used">Espace interne utilisé</string>
+    <string name="database_size">Taille de la base</string>
+    <string name="thumbnails_cached">Miniatures en cache</string>
+    
+    <!-- widget layout -->
+    <string name="loading_thumbnail">Chargement des miniatures&#8230;</string>
+    <string name="latest_news">A la une</string>
+    <string name="nothing_to_read">Rien à lire!</string>
+
+    <!-- feed dialog -->
+    <string name="feed_name_optional">Nom du flux (opt.)</string>
+    <string name="feed_url">URL</string>
+    <string name="feed_url_required">URL du flux (requis)</string>
+    <string name="feed_color">Couleur</string>
+    <string name="pick_color_btn">Choix</string>
+    <string name="clear_color_btn">Init.</string>
+    <string name="feed_type">Type</string>
+    <string name="feed_homepage">Site</string>
+    <string name="feed_refreshed">Mise-à-jour</string>
+    <string name="feed_search">Chercher</string>
+    <string name="feed_lookup">Naviguer</string>
+    
+    <string name="feed_details_invalid_state">Etat incohérent. L\'opération ne peut aboutir.</string>
+    
+    <string name="item_stop_loading">Arrêter le chargement</string>
+    
+    <!-- about section -->
+    <string name="help_license">
+    IL N’Y A AUCUNE GARANTIE POUR LE PROGRAMME, DANS LES LIMITES PERMISES PAR LA LOI APPLICABLE. À MOINS QUE CELA NE SOIT ÉTABLI DIFFÉREMMENT PAR ÉCRIT, LES TITULAIRES DE DROITS ET/OU LES AUTRES PARTIES FOURNISSENT LE PROGRAMME « EN L’ÉTAT » SANS GARANTIE D’AUCUNE SORTE, QU’ELLE SOIT EXPRIMÉE OU TACITE, CECI COMPRENANT, DE MANIÈRE NON EXHAUSTIVE, LES GARANTIES TACITES DE COMMERCIALISATION ET D’ADÉQUATION À UN OBJECTIF PARTICULIER. VOUS ASSUMEZ LE RISQUE ENTIER CONCERNANT LA QUALITÉ ET LES PERFORMANCES DU PROGRAMME. DANS L’ÉVENTUALITÉ OÙ LE PROGRAMME S’AVÉRERAIT DÉFECTUEUX, VOUS ASSUMEZ LES COÛTS DE TOUS LES SERVICES, RÉPARATIONS OU CORRECTIONS NÉCESSAIRES. 		
+    </string>
+    <string name="help_source">
+    Le code source et les versions précédentes sont disponibles sur &lt;a href="http://code.google.com/p/scrollable-news-widget/">google code&lt;/a> sous les termes de la license GPL v3.    
+    </string>
+    
+    <!-- changes -->
+    <string name="hints">Hints</string>
+    <string name="release_message">
+Problem with the background? Try turning the rounded corners off.\r\n
+    </string>
+
+    <string name="v_212_title">Version 2.1.2 (2012&#8211;11&#8211;04)</string>
+    <string name="v_212_changes"> 
+- Add 2 and 3- column layout\r\n
+	</string>
+	
+    <string name="v_210_title">Version 2.1.0 (2012&#8211;10&#8211;27)</string>
+    <string name="v_210_changes"> 
+- Fix embedded browser menu\r\n
+- Google news thumbnail hack (url fix)\r\n
+- Stop loading option (reader menu)\r\n
+- Support media:content thumbnail\r\n
+- Fix media:description incorrect use\r\n
+- Add the option to hide story title\r\n
+- Get rid of the hideous orb icon\r\n
+- Add "mark all read" option"\r\n
+- Tweak main settings activity\r\n 
+    </string>       
+    
+    <string name="v_2011_title">Version 2.0.11 (2012&#8211;07&#8211;25)</string>
+    <string name="v_2011_changes"> 
+- Critical bug fix (wifi connection detection)\r\n
+    </string>       
+    
+    <string name="v_2010_title">Version 2.0.10 (2012&#8211;07&#8211;24)</string>
+    <string name="v_2010_changes"> 
+- Minor bug fix (Date format)\r\n
+    </string>    
+        
+    <string name="v_209_title">Version 2.0.9 (2012&#8211;06&#8211;21)</string>
+    <string name="v_209_changes"> 
+- Minor bug fixes\r\n
+- More sanity checks\r\n
+    </string>    
+        
+    <string name="v_208_title">Version 2.0.8 (2012&#8211;06&#8211;05)</string>
+    <string name="v_208_changes"> 
+- Allow to distribute stories evenly between feeds\r\n
+- Do no update date if no feed(s) not reloaded\r\n
+- Minor bug fixes\r\n
+    </string>    
+    
+    <string name="v_207_title">Version 2.0.7 (2012&#8211;05&#8211;21)</string>
+    <string name="v_207_changes">   
+- Fix 3rd and 4th layouts (overlapping elements)\r\n
+    </string>
+    
+    <string name="v_206_title">Version 2.0.6 (2012&#8211;05&#8211;20)</string>
+    <string name="v_206_changes">   
+- Improve background handling\r\n
+- Minor bug fixes\r\n
+- Fix thumbnail size\r\n
+- Improve layouts 3 &amp; 4\r\n
+    </string>
+    
+    <string name="v_205_title">Version 2.0.5 (2012&#8211;05&#8211;19)</string>
+    <string name="v_205_changes">
+- Add debug mode (unhide active areas)\r\n
+- Various ergonomics improvements\r\n
+- More support for malformed feeds!\r\n
+- Fix "Nothing to read" bug!\r\n
+- Show widget title while loading\r\n
+- Minor bug fixes\r\n
+	</string>    
+    
+    <string name="v_204_title">Version 2.0.4 (2012&#8211;05&#8211;18)</string>
+    <string name="v_204_changes">
+- Improve background handling\r\n
+- Fix HoneyComb updating bug\r\n
+- Force title visibility on HC\r\n
+- Change theme to Holo dark\r\n
+- Add "what's new dialog"\r\n        
+    </string>
+    
+    <string name="v_203_title">Version 2.0.3 (2012&#8211;05&#8211;16)</string>
+    <string name="v_203_changes">
+- Offline cache browsing\r\n
+- More sanity checks\r\n
+- Yahoo namespace support\r\n
+- Fix widget size (250dp vs. 294dp)\r\n
+- Add minResize attributes\r\n
+    </string>
+    
+    <string name="v_201_title">Version 2.0.1 (2012&#8211;05&#8211;15)</string>
+    <string name="v_201_changes">
+- Fix image extractor bug\r\n
+- Reload widget on news deletion\r\n
+- Force extension on export\r\n
+- Ignore incorrect feed on import\r\n
+- Read feed color on import\r\n
+- Show file path on export success\r\n
+- Use item content if no description\r\n
+- Clear items before loading (option)\r\n
+    </string>
+    
+    <string name="v_200_title">Version 2.0.0 (2012&#8211;05&#8211;13)</string>
+    <string name="v_200_changes">
+- Complete rewrite to support ICS\r\n
+- Requires Android > 3.1 (API Level 12)\r\n
+    </string>	
+    <string name="credits">Credits</string>
+    <string name="credits_text">
+- ViNNNtalik@xda: russian translation\r\n
+    </string>
+</resources>

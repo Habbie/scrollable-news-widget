@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Scrollable News</string>
+    
+    <!-- shared values -->
+    <string name="ok">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="import_action">Импорт</string>
+    <string name="export_action">Экспорт</string>
+    <string name="error">Ошибка</string>
+    <string name="add_action">Добав.</string>
+    
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="success">Успешно</string>
+    <string name="info">Инфо</string>
+    <string name="warning">Предупреждение</string>
+    <string name="details">Детали</string>
+    <string name="delete">Удалить</string>
+    <string name="delete_all">Удалить все</string>
+    <string name="deleting">Удаление&#8230;</string>
+    <string name="preview">Предпросмотр</string>
+    <string name="confirmation">Подтверждение</string>
+    <string name="reload_action">Перезагрузка</string>
+    
+    <string name="name_conflict_import_warning">но были обнаружены некоторые конфликты</string>
+        
+    <string name="whats_new_option_text">Что нового?</string>
+    
+    <string name="loading">Загрузка&#8230;</string>
+    
+    <!-- activity labels -->
+    <string name="activity_story_list">Список новостей</string>
+    <string name="activity_story_details">Прочитанные</string>
+    <string name="activity_file_picker">Выбрать файл</string>
+    <string name="activity_color_picker">Выбрать цвет</string>
+    <string name="activity_theme_details">Редактировать тему</string>
+    <string name="activity_behaviour_details">Редактировать шаблон</string>
+        
+    <!-- object names -->
+    <string name="object_behaviour">шаблон</string>
+    <string name="object_theme">тема</string>
+    <string name="object_feed">канал</string>
+    
+    <!-- file dialog -->
+    <string name="location">Размещение</string>
+    <string name="cant_read_folder">"папка не доступна!"</string>
+    <string name="nnew">Новый</string>
+    <string name="select">Выбрать</string>
+    <string name="file_name">Имя файла:</string>
+    <string name="create">Сохранить</string>
+    <string name="no_data">Нет данных</string>
+    
+    <string name="err">Ошибка</string>
+    
+    <!-- main activity -->
+    <string name="main_tab_feeds">Каналы</string>
+    <string name="main_tab_themes">Темы</string>
+    <string name="main_tab_behaviours">Шаблоны</string>
+    <string name="main_tab_favorites">Избранное</string>
+    <string name="main_tab_settings">Настройки</string>
+    <string name="main_tab_stats">Статистика</string>
+    <string name="main_tab_about">О программе</string>
+    
+    <!-- configuration -->
+    <string name="config_widget_not_saved">Конфигурация НЕ сохранена!</string>
+    <string name="config_widget_validation_errors">Ошибка проверки</string>
+    <string name="config_widget_select_theme">Выбрать тему</string>
+    <string name="config_widget_select_behaviour">Выбрать шаблон</string>
+    <string name="config_widget_select_feeds">Выбрать каналы</string>
+    <string name="config_widget_empty_collection">%1$s отсутствует! Пожалуйста, создайте хотя бы один %2$s.</string>
+    <string name="config_widget_behaviour_not_set">Шаблон не выбран</string>
+    <string name="config_widget_theme_not_set">Тема не выбрана</string>
+    <string name="config_widget_no_feed_selected">Канал новостей не выбран</string>
+        
+        <!-- default values -->
+    <string name="defaults_dark_theme">Стандартная темная тема</string>
+    <string name="defaults_light_theme">Стандартная светлая тема</string>
+    <string name="defaults_widget_title">Последние новости (%d)</string>
+    <string name="defaults_behaviour_name">Новый шаблон поведения</string>
+    <string name="defaults_theme_name">Новая тема</string>
+    
+    <!-- mobilizer -->
+    <string name="None">Нет</string>
+    <string name="InstaPaper">InstaPaper</string>
+    <string name="ReadItLater">ReadItLater</string>
+    <string name="Google">Google</string>
+    
+    <!--color picker -->
+    <string name="color_picker_title">Выбрать цвет</string>
+    <string name="color_picker_alpha">Альфа</string>
+    
+    <!-- behaviours -->
+    <string name="behaviour_import_title">Импорт шаблонов</string>
+    <string name="behaviour_delete_ref">Невозможно удалить шаблон поведения. Используется ли он в конфигурации виджета?</string>
+    <string name="behaviour_export_success">Шаблоны успешно экспортированы в:</string>
+    <string name="behaviour_export_failure">Шаблоны не могут быть экспортированы</string>
+    <string name="behaviour_import_success">Выбранные шаблоны успешно импортированы</string>
+    <string name="behaviour_import_failure">Шаблон не импортирован из-за потенциального конфликта имен</string>
+    <string name="behaviour_import_empty">Выбранный файл не содержит шаблонов поведения</string>
+    <string name="behaviour_import_error">Невозможно прочитать шаблоны из файла</string>
+    <string name="behaviour_validation_name_not_set">Имя шаблона поведения не задано</string>
+    <string name="behaviour_validation_name_exists">Указанное имя шаблона уже существует</string>
+    <string name="distribute_evenly">Равномерное распределение</string>
+    <string name="distribute_evenly_summary">Распределение новостей равномерно между каналами</string>
+    
+    <!-- feeds  -->
+    <string name="feed_saving_message">Сохранение канала. Пожалуйста, ждите&#8230;</string>
+    <string name="feed_saving_title">Сохранение&#8230;</string>
+    <string name="feed_delete_confirm">Удаление канала новостей не может быть завершено. Вы хотите продолжить?</string>
+    <string name="feed_add_title">Новый канал</string>
+    <string name="feed_open_in_browser">Вы хотите попробовать и открыть URL-адрес в веб-браузере?</string>
+    
+    <string name="feed_invalid_parameters_title">Не правильные параметры</string>
+    <string name="feed_invalid_parameters_details">Указанный URL-адрес неправильный.</string>
+    <string name="feed_validation_failure_title">Проверка не удалась</string>
+    <string name="feed_validation_failure_details">Невозможно подключиться к каналу новостей.</string>
+    <string name="feed_validating_title">Проверка канала</string>
+    <string name="feed_validating_message">Попытка подключения к каналу новостей. Это может занять несколько секунд.</string>
+    <string name="feed_missing_url_title">Отсутствует параметр</string>
+    <string name="feed_missing_url_message">Пожалуйста, введите правильный URL-адрес для этого канала новостей.</string>
+    
+    <string name="feed_export_success">Каналы новостей успешно экспортированы в:</string>
+    <string name="feed_export_failure">Возникла ошибка при экспортировании каналов новостей в:</string>
+    <string name="feed_export_error">Невозможно сохранить канал новостей. Причина отказа должна быть записана в лог.</string>
+    <string name="feed_import_title">Выберите каналы новостей для импорта</string>
+    <string name="feed_import_success">%1$s канал(ов) импортировано, но URL-адреса не были проверены.</string>
+
+
+    <string name="feed_import_task_title">Импортирование&#8230;</string>
+    <string name="feed_import_task_message">Импортирование каналов. Это может занять несколько секунд.</string>
+    <string name="feed_export_task_title">Экспортирование&#8230;</string>
+    <string name="feed_export_task_message">Экспортирование каналов. Это может занять несколько секунд.</string>
+    
+    <string name="feed_import_result_invalid_file">Выбраный файл неправильный.</string>
+    <string name="feed_import_result_no_feed_found">Объявленные каналы новостей не могут быть найдены.</string>
+    <string name="feed_import_result_parse_error">Возникла ошибка при парсинге указанного файла.</string>
+    
+    <string name="feed_search_title">Поиск каналов</string>
+    <string name="feed_search_prompt">Ключевые слова</string>
+    <string name="feed_search_no_result">Не найдено каналов новостей в соответствии с Вашим запросом/</string>
+    <string name="feed_search_match_found">Найден(о) %1$d канал(ов) новостей</string>
+    <string name="feed_searching_title">Поиск&#8230;</string>
+    <string name="feed_searching_message">Обращение в сервис поиска каналов новостей.</string>
+    <string name="feed_lookup_title">Уточнение (осмотр) каналов</string>
+    <string name="feed_lookup_prompt">Веб-сайт</string>
+    <string name="feed_lookup_message">Обращение к веб-сайту</string>
+    <string name="feed_connect_title">Обращение к каналу новостей&#8230;</string>
+    <string name="feed_connect_message">Пожалуйста, подождите, пока элементы канала новостей будут уточнены.</string>
+    <string name="feed_connect_error">Невозможно подключиться к каналу</string>
+    <string name="feed_connect_save_failure">Возникла ошибка при сохранении элементов канала новостей.</string>
+    
+    <!-- items -->
+    <string name="item_read_story">Прочитать новость</string>
+    <string name="item_mark_read">Отметить прочитанной</string>
+    <string name="item_mark_unread">Отметить непрочитанной</string>
+    <string name="item_mark_all_read">Отметить все как прочитанной</string>
+    <string name="item_add_to_favorites">Добавить в Избранное</string>
+    <string name="item_remove_from_favorites">Удалить из Избранного</string>
+    <string name="item_share_option">Поделиться&#8230;</string>
+    <string name="item_share_title">Поделиться через&#8230;</string>
+    <string name="item_source">Источник:</string>
+    
+    <!-- stats -->
+    <string name="stat_counting">Подсчет&#8230;</string>
+    <string name="stat_delete_app_cache">Удаление кэша приложения</string>
+    <string name="stat_delete_thumbnails">Удаление эскизов</string>
+    <string name="stat_delete_all_news">Удаление всех новостей</string>
+    <string name="stat_confirm_message">Операция не может быть удалена. Продолжить?</string>
+    
+    <!-- themes -->
+    <string name="theme_import_title">Импорт тем</string>
+    <string name="theme_delete_ref">Невозможно удалить тему. Используется ли она в конфигурации виджета?</string>
+    <string name="theme_export_success">Темы успешно экспортированы в:</string>
+    <string name="theme_export_failure">Темы не могут быть экспортированы</string>
+    <string name="theme_import_empty">Выбранный файл не содержит тем</string>
+    <string name="theme_import_error">Невозможно прочитать темы из файла</string>
+    <string name="theme_import_failure">Темы не импортированы из-за потенциального конфликта имен</string>
+    <string name="theme_import_success">Темы успешно импортированы</string>
+    <string name="theme_validation_name_not_set">Имя темы не задано</string>
+    <string name="theme_validation_name_exists">Указанное имя темы уже существует</string>
+    <string name="theme_not_saved_invalid_state">Конфигурация НЕ сохранена!</string>
+    
+    <!-- utils -->
+    <string name="utils_shorten_url_title">Сокращение ссылки</string>
+    <string name="utils_shorten_url_message">Пожалуйста, подождите, пока ссылка новости будет сокращена.</string>
+    
+    
+    <!--  theme preferences -->
+    <string name="theme_name">Имя темы</string>
+    <string name="theme_name_summary">Требуется имя темы. Должно быть уникальным</string>
+    <string name="screen_global_appearance">Общий внешний вид</string>
+    <string name="screen_global_appearance_summary">Глобальные настройки общего внешнего вида</string>
+    <string name="widget_background_color">Задний фон</string>
+    <string name="widget_background_color_summary">Цвет заднего фона виджета</string>
+    <string name="widget_background_color_add">Выбор цвета</string>
+    <string name="widget_background_opacity">Прозрачность</string>
+    <string name="widget_background_opacity_summary">Прозрачность заднего фона виджета (0 - прозрачный, 255 - непрозрачный)</string>
+    <string name="widget_background_opacity_add">Выбор прозрачности</string>
+    
+    <!-- TODO -->
+    <string name="widget_num_columns">Number of columns</string>
+    <string name="widget_num_columns_summary">If you want the news to be presented in a grid</string>
+    
+    <string name="widget_rounded_corners">Закругленные углы</string>
+    <string name="widget_rounded_corners_summary">Применять закругленные углы у виджета</string>
+    <string name="widget_show_title">Заголовок виджета</string>
+    <string name="widget_show_title_summary">Показывать строку с заголовком виджета</string>
+    <string name="date_format">Формат даты</string>
+    <string name="date_format_summary">Задать формат представления даты</string>
+    <string name="date_format_add">Задать формат даты</string>
+    <string name="widget_title_color">Цвет заголовка</string>
+    <string name="widget_title_color_summary">Выбрать цвет заголовка виджета</string>
+    <string name="story_title_appearance">Заголовок новости</string>
+    <string name="story_title_appearance_summary">Настройки внешнего вида заголовка новости</string>
+    <string name="story_title_color">Цвет шрифта</string>
+    <string name="story_title_color_summary">Базовый цвет заголовка новости. Может быть переписан отдельными каналами новостей.</string>
+    <string name="story_title_font_size">Размер шрифта</string>
+    <string name="story_title_font_size_summary">Размер шрифта заголовка новости</string>
+    <string name="story_title_font_size_add">Задать размер шрифта</string>
+    <string name="hide_story_title">прятать Заголовок</string>
+    <string name="hide_story_title_summary">прятать Заголовок</string>
+    <string name="story_title_uppercase">Верхний регистр</string>
+    <string name="story_title_uppercase_summary">Показывать заголовок новости заглавными буквами</string>
+    <string name="story_title_max_lines">Количество строк</string>
+    <string name="story_title_max_lines_summary">Максимальное число строк, выделяемое на заголовок новости</string>
+    <string name="story_title_max_lines_add">Макс. число строк</string>
+    <string name="story_description_appearance">Текст новости</string>
+    <string name="story_description_appearance_summary">Настройки внешнего вида текста новости</string>
+    <string name="story_description_color">Цвет шрифта</string>
+    <string name="story_description_color_summary">Цвет шрифта текста новости</string>
+    <string name="story_description_font_size">Размер шрифта</string>
+    <string name="story_description_font_size_summary">Размер шрифта текста новости</string>
+    <string name="story_description_font_size_add">Задать размер шрифта</string>
+    <string name="story_description_max_words">Количество слов</string>
+    <string name="story_description_max_words_summary">Максимальное число слов в тексте новости</string>
+    <string name="story_description_max_words_add">Макс. число слов</string>
+    <string name="story_footer_appearance">Нижний колонтитул</string>
+    <string name="story_footer_appearance_summary">Настройки нижнего колонтитула новости</string>
+    <string name="story_footer_show">Видимый</string>
+    <string name="story_footer_show_summary">Показывать нижний колонтитул</string>
+    <string name="story_footer_uppercase">Верхний регистр</string>
+    <string name="story_footer_uppercase_summary">Показывать нижний колонтитул новости заглавными буквами</string>
+    <string name="story_footer_font_size">Размер шрифта</string>
+    <string name="story_footer_font_size_summary">Размер шрифта нижнего колонтитула новости</string>
+    <string name="story_footer_font_size_add">Задать размер шрифта</string>
+    <string name="story_author_color">Цвет шрифта автора</string>
+    <string name="story_author_color_summary">Цвет шрифта автора новости</string>
+    <string name="story_date_color">Цвет шрифта даты</string>
+    <string name="story_date_color_summary">Цвет шрифта даты новости</string>
+    <string name="layout_tweak">Макет виджета</string>
+    <string name="layout_tweak_summary">Настройки расположения элементов виджета в новости</string>
+    <string name="story_layout">Вид макета</string>
+    <string name="story_layout_summary">Выбрать используемый макет новости</string>
+    <string name="thumbnail_size">Размер эскиза</string>
+    <string name="thumbnail_size_summary">Ширина эскиза, если он показан</string>
+    
+    <!-- behaviour preferences -->
+    <string name="behaviour_name">Имя шаблона поведения</string>
+    <string name="behaviour_name_summary">Требуется имя шаблона поведения. Должно быть уникальным</string>
+    <string name="story_count">Количество новостей</string>
+    <string name="story_count_summary">Определить количество новостей, содержащихся в одном виджете</string>
+    <string name="mobilizer_service">Мобилайзер-сервис</string>
+    <string name="mobilizer_service_summary">Определить, какой мобилайзер будет использоваться</string>
+    <string name="builtin_browse">Встроенный браузер</string>
+    <string name="builtin_browse_summary">Использовать встроенный браузер</string>
+    <string name="force_author">Автор</string>
+    <string name="force_author_summary">Использовать название канала вместо автора новости</string>
+    <string name="read_stories">Прочитанные новости</string>
+    <string name="read_stories_summary">Прочитанные новости будут скрыты</string>
+    <string name="parse_story_body">Парсинг новостей</string>
+    <string name="parse_story_body_summary">Поиск эскизов в истории тела новости (тяжелая операция)</string>
+    <!-- TODO -->
+    <string name="clear_before_load">Очистить перед загрузкой</string>
+    <string name="clear_before_load_summary">Очистить истории перед загрузкой новых</string>
+    
+    <!-- global settings -->
+    <string name="refresh_interval">Интервал обновления</string>
+    <string name="refresh_interval_summary">Как часто виджет должен обновляться (в минутах)</string>
+    <string name="auto_mark_read">Как прочитанное</string>
+    <string name="auto_mark_read_summary">Автоматически отмечать новости как прочитанные</string>
+    <string name="wifi_only">Только Wi-Fi</string>
+    <string name="wifi_only_summary">Обновлять только при включенном Wi-Fi</string>
+    <string name="fetch_thumbnails">Загрузка эскизов</string>
+    <string name="fetch_thumbnails_summary">Загружать эскизы как можно быстрее</string>
+    <string name="image_min_width">Ширина изображения</string>
+    <string name="image_min_width_summary">Установить минимальную ширину изображения</string>
+    <string name="debug_mode">Отладка</string>
+    <string name="debug_mode_summary">Включить режим отладки</string>
+    <string name="prefer_shape_over_ninepatch">Улучшенная отрисовка</string>
+    <string name="prefer_shape_over_ninepatch_summary">Используется, когда включена опция Закругленные углы. Лучшая графика и маштабируемость виджета, но может некорректно работать на некоторых устройствах.</string>
+    
+    <!-- widget config -->
+    <string name="launch_main_activity">Редактировать настройки</string>
+    <string name="launch_main_activity_summary">Редактировать темы, шаблоны поведения, каналы новостей и общие настройки</string>
+    <string name="widget_configuration">Конфигурация виджета</string>
+    <string name="widget_title">Заголовок</string>
+    <string name="widget_title_summary">Заголовок виджета. Используйте %d, чтобы отображать дату обновления</string>
+    <string name="behaviour">Шаблон поведения</string>
+    <string name="behaviour_summary">Выбрать один из настроенных шаблонов поведения</string>
+    <string name="theme">Тема</string>
+    <string name="theme_summary">Выбрать одну из настроенных тем виджета</string>
+    <string name="feeds">Каналы новостей</string>
+    <string name="feeds_summary">Выбрать из настроенных каналов новостей те, которые будут отображаться в виджете</string>
+    
+    <!-- statistics layout -->
+    <string name="database">База данных</string>
+    <string name="feed_count">Число каналов новостей</string>
+    <string name="items_saved">Элементов сохранено</string>
+    <string name="items_read">Элементов прочитано</string>
+    <string name="favorite_stories">Любимые новости</string>
+    <string name="active_feed">Часто читаемые каналы</string>
+    <string name="cache">Кэш</string>
+    <string name="space_used">Всего использовано памяти</string>
+    <string name="sd_space_used">Память SD-карты</string>
+    <string name="internal_space_used">Внутренняя память</string>
+    <string name="database_size">Размер базы данных</string>
+    <string name="thumbnails_cached">Кэшировано эскизов</string>
+    
+    <!-- widget layout -->
+    <string name="loading_thumbnail">Загрузка эскизов&#8230;</string>
+    <string name="latest_news">Последние новости</string>
+    <string name="nothing_to_read">Читать нечего!</string>
+    
+    <!-- feed dialog -->
+    <string name="feed_name_optional">Имя канала (опционально)</string>
+    <string name="feed_url">Адрес</string>
+    <string name="feed_url_required">Адрес канала (обязательно)</string>
+    <string name="feed_color">Цвет</string>
+    <string name="pick_color_btn">Выбрать</string>
+    <string name="clear_color_btn">Очистить</string>
+    <string name="feed_type">Тип</string>
+    <string name="feed_homepage">Дом. страница</string>
+    <string name="feed_refreshed">Обновлено</string>
+    <string name="feed_add">Добавить</string>
+    <string name="feed_search">Поиск</string>
+    <string name="feed_lookup">Осмотр</string>
+    
+    <string name="feed_details_invalid_state">Неверное значение. Операция не может быть завершена.</string>
+    
+    <string name="item_stop_loading">остановки загрузки</string>
+    
+    <!-- about section -->
+    <string name="help_license">
+НИКАКИХ ГАРАНТИЙ
+\r\n\r\n
+НА ПРОГРАММУ НЕТ ГАРАНТИЙ В ТОЙ МЕРЕ, КАКАЯ ДОПУСТИМА ПРИМЕНИМЫМ ЗАКОНОМ. ЗА ИСКЛЮЧЕНИЕМ ТЕХ СЛУЧАЕВ, КОГДА ПРОТИВНОЕ ЗАЯВЛЕНО В ПИСЬМЕННОЙ ФОРМЕ, ДЕРЖАТЕЛИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИЕ СТОРОНЫ ПОСТАВЛЯЮТ ПРОГРАММУ "КАК ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ ПОДРАЗУМЕВАЕМЫМИ ГАРАНТИЯМИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ. ВЕСЬ РИСК В ОТНОШЕНИИ КАЧЕСТВА И ПРОИЗВОДИТЕЛЬНОСТИ ПРОГРАММЫ ОСТАЕТСЯ ПРИ ВАС. ЕСЛИ ПРОГРАММА ОКАЖЕТСЯ ДЕФЕКТИВНОЙ, ВЫ ПРИНИМАЕТЕ НА СЕБЯ СТОИМОСТЬ ВСЕГО НЕОБХОДИМОГО ОБСЛУЖИВАНИЯ, ВОССТАНОВЛЕНИЯ ИЛИ ИСПРАВЛЕНИЯ. 
+\r\n\r\n
+И В КОЕМ СЛУЧАЕ, ЕСЛИ НЕ ТРЕБУЕТСЯ ПОДХОДЯЩИМ ЗАКОНОМ ИЛИ НЕ УСЛОВЛЕНО В ПИСЬМЕННОЙ ФОРМЕ, НИКАКОЙ ДЕРЖАТЕЛЬ АВТОРСКИХ ПРАВ ИЛИ НИКАКОЕ ДРУГОЕ ЛИЦО, КОТОРОЕ МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, КАК БЫЛО РАЗРЕШЕНО ВЫШЕ, НЕ ОТВЕТСТВЕННЫ ПЕРЕД ВАМИ ЗА УБЫТКИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СПЕЦИАЛЬНЫЕ, СЛУЧАЙНЫЕ ИЛИ ПОСЛЕДОВАВШИЕ УБЫТКИ, ПРОИСТЕКАЮЩИЕ ИЗ ИСПОЛЬЗОВАНИЯ ИЛИ НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ ПОТЕРЕЙ ДАННЫХ, ИЛИ ДАННЫМИ, СТАВШИМИ НЕПРАВИЛЬНЫМИ, ИЛИ ПОТЕРЯМИ, ПОНЕСЕННЫМИ ИЗ-ЗА ВАС ИЛИ ТРЕТЬИХ ЛИЦ, ИЛИ ОТКАЗОМ ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ЛЮБЫМИ ДРУГИМИ ПРОГРАММАМИ), ДАЖЕ ЕСЛИ ТАКОЙ ДЕРЖАТЕЛЬ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ.
+    </string>
+    <string name="help_source">
+    Исходный код и предыдущие версии доступны на &lt;a href="http://code.google.com/p/scrollable-news-widget/">google code&lt;/a> в рамках лицензии GPL v3.
+    </string>
+
+    <!-- changes -->
+    <string name="hints">Советы</string>
+    <string name="release_message">
+Проблема с фоном? Попробуйте отключить опцию Закругленные углы.
+    </string>
+
+    <string name="v_212_title">Version 2.1.2 (2012&#8211;11&#8211;04)</string>
+    <string name="v_212_changes"> 
+- Add 2 and 3- column layout\r\n
+	</string>
+    
+    
+    <string name="v_210_title">Версия 2.1.0 (2012&#8211;10&#8211;27)</string>
+    <string name="v_210_changes"> 
+- Fix embedded browser menu\r\n
+- Google news thumbnail hack (url fix)\r\n
+- Stop loading option (reader menu)\r\n
+- Support media:content thumbnail\r\n
+- Fix media:description incorrect use\r\n
+- Add the option to hide story title\r\n
+- Get rid of the hideous orb icon\r\n
+- Add "mark all read" option"\r\n
+- Tweak main settings activity\r\n 
+    </string>       
+    
+    
+    <string name="v_2011_title">Версия 2.0.11 (2012&#8211;07&#8211;25)</string>
+    <string name="v_2011_changes"> 
+- Исправлен ряд критический ошибок (Wi-Fi)\r\n
+    </string>       
+
+    <string name="v_2010_title">Версия 2.0.10 (2012&#8211;07&#8211;24)</string>
+    <string name="v_2010_changes"> 
+- Исправлен ряд мелких ошибок (Формат даты)\r\n
+    </string>    
+    
+    <string name="v_209_title">Версия 2.0.9 (2012&#8211;06&#8211;21)</string>
+    <string name="v_209_changes"> 
+- Исправлен ряд мелких ошибок\r\n
+- Более разумные проверки\r\n
+    </string>    
+        
+    <string name="v_208_title">Версия 2.0.8 (2012&#8211;06&#8211;05)</string>
+    <string name="v_208_changes"> 
+- Опция для равномерного распределения новостей между каналами\r\n
+- Дата не обновляется, если канал не перезагружен (только обновление)\r\n
+- Исправлен ряд мелких ошибок\r\n
+    </string>    
+    
+    <string name="v_207_title">Версия 2.0.7 (2012&#8211;05&#8211;21)</string>
+    <string name="v_207_changes">   
+- Исправлены макеты 3 и 4 (перекрытие элементов)\r\n
+    </string>
+    
+    <string name="v_206_title">Версия 2.0.6 (2012&#8211;05&#8211;20)</string>
+    <string name="v_206_changes">   
+- Улучшена работа в фоне\r\n
+- Исправлен ряд мелких ошибок\r\n
+- Исправлен размер эскизов\r\n
+- Улучшен макет 3 &amp; 4\r\n
+    </string>    
+    
+    <string name="v_205_title">Версия 2.0.5 (2012&#8211;05&#8211;19)</string>
+    <string name="v_205_changes">
+- Добавлен режим Отладка (показывает активные зоны)\r\n
+- Различные эргономические улучшения\r\n
+- Лучшая поддержка плохо сформированных каналов!\r\n
+- Исправлен баг "Читать нечего"!\r\n
+- Отображение заголовка виджета во время загрузки\r\n
+- Исправлен ряд мелких ошибок\r\n
+	</string>
+	
+	<string name="v_204_title">Версия 2.0.4 (2012&#8211;05&#8211;18)</string>
+    <string name="v_204_changes">
+- Исправлен баг обновления в HoneyComb\r\n
+- Улучшена работа в заднем фоне\r\n
+- Улучшена видимость заголовка в HoneyComb\r\n
+- Тема изменена на Holo dark\r\n
+- Добавлен диалог "Что нового"\r\n        
+    </string>
+    
+    <string name="v_203_title">Версия 2.0.3 (2012&#8211;05&#8211;16)</string>
+    <string name="v_203_changes">
+- Оффлайн просмотр кэша\r\n
+- Более разумные проверки\r\n
+- Поддержка имен Yahoo\r\n
+- Исправлен размер виджетов (250dp vs. 294dp)\r\n
+- Изменены атрибуты minResize\r\n
+    </string>
+    
+    <string name="v_201_title">Версия 2.0.1 (2012&#8211;05&#8211;15)</string>
+    <string name="v_201_changes">
+- Исправлен баг изображений\r\n
+- Обновление виджета при удалении новостей\r\n
+- Расширения при экспорте\r\n
+- Игнорирование неправльных каналов при импорте\r\n
+- Считывание цветов канала при импорте\r\n
+- Показ пути файла при успешном экспорте\r\n
+- Использование контента элемента при отсутствии описания\r\n
+- Очистка элементов перед загрузкой (опция)\r\n
+    </string>
+    
+    <string name="v_200_title">Версия 2.0.0 (2012&#8211;05&#8211;13)</string>
+    <string name="v_200_changes">
+- Полностью переписан код для поддержки ICS\r\n
+- Требования Android > 3.1 (API Level 12)\r\n
+    </string>	
+    <string name="credits">Благодарности</string>
+    <string name="credits_text">
+- ViNNNtalik@xda: за русский перевод\r\n
+    </string>
+    
+</resources>

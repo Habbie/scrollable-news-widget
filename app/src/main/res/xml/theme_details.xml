@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+		xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<EditTextPreference 
+		android:persistent="false"
+		android:title="@string/theme_name" 
+		android:key="theme_name"
+		android:summary="@string/theme_name_summary" />
+
+	<PreferenceScreen 
+			android:key="screen_global_appearance"
+			android:title="@string/screen_global_appearance" 
+			android:persistent="false"
+			android:summary="@string/screen_global_appearance_summary">
+
+		<fr.gdi.android.news.preference.color.ColorPickerPreference
+				android:key="widget_background_color" 
+				android:title="@string/widget_background_color"
+				android:persistent="false" 
+				android:summary="@string/widget_background_color_summary"
+				android:dialogTitle="@string/widget_background_color_add" />
+			
+		<EditTextPreference 
+				android:key="widget_background_opacity"
+				android:title="@string/widget_background_opacity" 
+				android:persistent="false"
+				android:summary="@string/widget_background_opacity_summary"
+				android:dialogTitle="@string/widget_background_opacity_add"
+				android:inputType="number" />
+			
+		<CheckBoxPreference 
+				android:key="widget_rounded_corners"
+				android:title="@string/widget_rounded_corners" 
+				android:persistent="false"
+				android:summary="@string/widget_rounded_corners_summary" />
+			
+		<CheckBoxPreference 
+				android:key="widget_show_title"
+				android:title="@string/widget_show_title" 
+				android:dialogTitle="@string/widget_show_title"
+				android:persistent="false"
+				android:summary="@string/widget_show_title_summary" />
+
+		<EditTextPreference 
+				android:key="date_format"
+				android:persistent="false"
+				android:title="@string/date_format" 
+				android:summary="@string/date_format_summary" 
+				android:dialogTitle="@string/date_format_add" />
+			
+		<fr.gdi.android.news.preference.color.ColorPickerPreference
+				android:key="widget_title_color" 
+				android:persistent="false" 
+				android:title="@string/widget_title_color"
+				android:summary="@string/widget_title_color_summary" />
+		
+		<!-- 
+	 		font preference is commented out because there is no way to set the 
+	 		font of a remote textview without using writing text to bitmap.  
+ 		-->
+ 		<!--  
+		<fr.gdi.android.news.preference.font.FontPreference 
+	    		android:key="widget_font"
+                android:title="Font"
+                android:persistent="false"
+                android:summary="The widget font"
+                android:dialogTitle="Choose font" />
+ 		-->
+	</PreferenceScreen>
+	
+	<PreferenceScreen 
+			android:key="story_title_appearance"
+			android:title="@string/story_title_appearance" 
+			android:persistent="false"
+			android:summary="@string/story_title_appearance">
+		
+		<fr.gdi.android.news.preference.color.ColorPickerPreference
+				android:key="story_title_color" 
+				android:title="@string/story_title_color"
+				android:persistent="false" 
+				android:summary="@string/story_title_color_summary" />
+			
+		<CheckBoxPreference 
+				android:key="story_title_hide"
+				android:title="@string/hide_story_title" 
+				android:persistent="false"
+				android:summary="@string/hide_story_title_summary" />
+		
+		<EditTextPreference 
+				android:key="story_title_font_size"
+				android:title="@string/story_title_font_size" 
+				android:inputType="number"
+				android:persistent="false"
+				android:summary="@string/story_title_font_size_summary"
+				android:dialogTitle="@string/story_title_font_size_add" />
+			
+		<CheckBoxPreference 
+				android:key="story_title_uppercase"
+				android:title="@string/story_title_uppercase" 
+				android:persistent="false"
+				android:summary="@string/story_title_uppercase_summary" />
+			
+		<EditTextPreference 
+				android:key="story_title_max_lines"
+				android:title="@string/story_title_max_lines" 
+				android:inputType="number"
+				android:persistent="false"
+				android:summary="@string/story_title_max_lines_summary"
+				android:dialogTitle="@string/story_title_max_lines_add" />
+	</PreferenceScreen>
+	
+	<PreferenceScreen 
+			android:key="story_description_appearance"
+			android:persistent="false"
+			android:title="@string/story_description_appearance" 
+			android:summary="@string/story_description_appearance_summary">
+		
+		<fr.gdi.android.news.preference.color.ColorPickerPreference
+				android:key="story_description_color" 
+				android:title="@string/story_description_color"
+				android:persistent="false" 
+				android:summary="@string/story_description_color_summary" />
+			
+		<EditTextPreference 
+				android:key="story_description_font_size"
+				android:title="@string/story_description_font_size" 
+				android:inputType="number"
+				android:persistent="false"
+				android:summary="@string/story_description_font_size_summary"
+				android:dialogTitle="@string/story_description_font_size_add" />
+				
+		<EditTextPreference 
+				android:key="story_description_max_words"
+				android:title="@string/story_description_max_words" 
+				android:inputType="number"
+				android:persistent="false"
+				android:summary="@string/story_description_max_words_summary"
+				android:dialogTitle="@string/story_description_max_words_add" />
+	</PreferenceScreen>
+	
+	<PreferenceScreen 
+			android:key="story_footer_appearance"
+			android:title="@string/story_footer_appearance" 
+			android:persistent="false"
+			android:summary="@string/story_footer_appearance_summary">
+			
+		<CheckBoxPreference 
+				android:key="story_footer_show"
+				android:title="@string/story_footer_show" 
+				android:persistent="false"
+				android:summary="@string/story_footer_show_summary" />
+			
+		<CheckBoxPreference 
+				android:key="story_footer_uppercase"
+				android:title="@string/story_footer_uppercase" 
+				android:persistent="false"
+				android:summary="@string/story_footer_uppercase_summary" />
+				
+		<EditTextPreference 
+				android:key="story_footer_font_size"
+				android:title="@string/story_footer_font_size"
+				android:inputType="number" 
+				android:persistent="false"
+				android:summary="@string/story_footer_font_size_summary"
+				android:dialogTitle="@string/story_footer_font_size_add" />
+
+		<fr.gdi.android.news.preference.color.ColorPickerPreference
+				android:key="story_author_color" 
+				android:title="@string/story_author_color"
+				android:persistent="false" 
+				android:summary="@string/story_author_color_summary" />
+			
+		<fr.gdi.android.news.preference.color.ColorPickerPreference
+				android:key="story_date_color" 
+				android:title="@string/story_date_color"
+				android:persistent="false" 
+				android:summary="@string/story_date_color_summary" />
+			
+	</PreferenceScreen>
+	
+	<PreferenceScreen 
+			android:persistent="false"
+			android:title="@string/layout_tweak" 
+			android:summary="@string/layout_tweak_summary">
+
+		<fr.gdi.android.news.preference.layout.LayoutChoicePreference
+				android:key="story_layout" 
+				android:title="@string/story_layout"
+				android:persistent="false" 
+				android:dialogTitle="@string/story_layout"
+				android:summary="@string/story_layout_summary" />
+	
+		<ListPreference 
+		    android:key="widget_num_columns"
+		    android:title="@string/widget_num_columns" 
+		    android:summary="@string/widget_num_columns_summary"
+		    android:entries="@array/numColumnEntries" 
+		    android:entryValues="@array/numColumnValues"
+		    android:dialogTitle="@string/widget_num_columns"
+		    android:persistent="false" 
+		    android:defaultValue="1" />
+		
+		<EditTextPreference android:key="thumbnail_size"
+				android:title="@string/thumbnail_size" 
+				android:inputType="number"
+				android:persistent="false"
+				android:summary="@string/thumbnail_size_summary" />
+			
+	</PreferenceScreen>
+	
+</PreferenceScreen>

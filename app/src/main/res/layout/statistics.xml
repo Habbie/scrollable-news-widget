@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10.0dip"
+        android:text="@string/database"
+        android:textSize="18.0sp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_marginBottom="2.0dip"
+        android:layout_weight="0.0"
+        android:background="@drawable/widget_list_divider" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10.0dip" >
+
+        <TextView
+            android:id="@+id/feed_count_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/feed_count" />
+
+        <TextView
+            android:id="@+id/feed_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/feed_count_label"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right|center"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/items_saved_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/feed_count_label"
+            android:text="@string/items_saved" />
+
+        <TextView
+            android:id="@+id/items_saved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/items_saved_label"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/feed_count"
+            android:gravity="right|center"
+            android:text="120" />
+
+        <TextView
+            android:id="@+id/items_read_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/items_saved_label"
+            android:text="@string/items_read" />
+
+        <TextView
+            android:id="@+id/items_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/items_read_label"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/items_saved"
+            android:gravity="right|center"
+            android:text="30" />
+
+        <TextView
+            android:id="@+id/favorites_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/items_read_label"
+            android:text="@string/favorite_stories" />
+
+        <TextView
+            android:id="@+id/favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/favorites_label"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/items_read"
+            android:gravity="right|center" />
+
+        <TextView
+            android:id="@+id/most_active_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/favorites_label"
+            android:text="@string/active_feed" />
+
+        <TextView
+            android:id="@+id/most_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/most_active_label"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/favorites"
+            android:gravity="right|center" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:padding="10.0dip"
+        android:text="@string/cache"
+        android:textSize="18.0sp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_marginBottom="2.0dip"
+        android:layout_weight="0.0"
+        android:background="@drawable/widget_list_divider" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10.0dip" >
+
+        <TextView
+            android:id="@+id/total_space_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/space_used" />
+
+        <TextView
+            android:id="@+id/total_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/total_space_label"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right|center" />
+
+        <TextView
+            android:id="@+id/sdcard_space_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/total_space_label"
+            android:text="@string/sd_space_used" />
+
+        <TextView
+            android:id="@+id/sdcard_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sdcard_space_label"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/total_space"
+            android:gravity="right|center" />
+
+        <TextView
+            android:id="@+id/internal_space_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/sdcard_space_label"
+            android:text="@string/internal_space_used" />
+
+        <TextView
+            android:id="@+id/internal_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/internal_space_label"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/sdcard_space"
+            android:gravity="right|center" />
+
+        <TextView
+            android:id="@+id/db_size_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/internal_space_label"
+            android:text="@string/database_size" />
+
+        <TextView
+            android:id="@+id/db_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/db_size_label"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/internal_space"
+            android:gravity="right|center" />
+
+        <TextView
+            android:id="@+id/thumbnails_cached_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/db_size_label"
+            android:text="@string/thumbnails_cached" />
+
+        <TextView
+            android:id="@+id/thumbnails_cached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/thumbnails_cached_label"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/db_size"
+            android:gravity="right|center" />
+    </RelativeLayout>
+
+</LinearLayout>

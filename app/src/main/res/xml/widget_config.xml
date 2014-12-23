@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="launch_main_activity"
+        android:persistent="false"
+        android:summary="@string/launch_main_activity_summary"
+        android:title="@string/launch_main_activity" />
+
+    <PreferenceCategory 
+        	android:title="@string/widget_configuration" >
+        	
+        <EditTextPreference
+            android:key="widget_title"
+            android:persistent="false"
+            android:summary="@string/widget_title_summary"
+            android:title="@string/widget_title" />
+
+        <Preference
+            android:key="behaviour"
+            android:persistent="false"
+            android:summary="@string/behaviour_summary"
+            android:title="@string/behaviour" />
+        
+        <Preference
+            android:key="theme"
+            android:persistent="false"
+            android:summary="@string/theme_summary"
+            android:title="@string/theme" />
+        
+        <Preference
+            android:key="feeds"
+            android:persistent="false"
+            android:summary="@string/feeds_summary"
+            android:title="@string/feeds" />
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

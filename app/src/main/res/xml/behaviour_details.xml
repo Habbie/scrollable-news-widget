@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:key="behaviour_name"
+        android:persistent="false"
+        android:summary="@string/behaviour_name_summary"
+        android:title="@string/behaviour_name" />
+    
+    <EditTextPreference
+        android:inputType="number"
+        android:key="max_number_of_news"
+        android:persistent="false"
+        android:summary="@string/story_count_summary"
+        android:title="@string/story_count" />
+
+    <CheckBoxPreference
+        android:key="distribute_evenly"
+        android:persistent="false"
+        android:summary="@string/distribute_evenly_summary"
+        android:title="@string/distribute_evenly" />
+    
+    <ListPreference
+        android:entries="@array/mobilizer"
+        android:entryValues="@array/mobilizerValues"
+        android:key="mobilizer"
+        android:persistent="false"
+        android:summary="@string/mobilizer_service_summary"
+        android:title="@string/mobilizer_service" />
+
+    <CheckBoxPreference
+        android:key="use_builtin_brower"
+        android:persistent="false"
+        android:summary="@string/builtin_browse_summary"
+        android:title="@string/builtin_browse" />
+    
+    <CheckBoxPreference
+        android:key="force_feed_as_author"
+        android:persistent="false"
+        android:summary="@string/force_author_summary"
+        android:title="@string/force_author" />
+    
+    <CheckBoxPreference
+        android:key="hide_read_stories"
+        android:persistent="false"
+        android:summary="@string/read_stories_summary"
+        android:title="@string/read_stories" />
+    
+    <CheckBoxPreference
+        android:key="clear_before_load"
+        android:persistent="false"
+        android:summary="@string/clear_before_load_summary"
+        android:title="@string/clear_before_load" />
+    
+    <CheckBoxPreference
+        android:key="lookup_images_in_body"
+        android:persistent="false"
+        android:summary="@string/parse_story_body_summary"
+        android:title="@string/parse_story_body" />
+
+</PreferenceScreen>

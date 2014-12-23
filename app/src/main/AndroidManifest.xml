@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="47"
+          android:versionName="2.1.2"
+          package="fr.gdi.android.news"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+         
+  <uses-sdk android:minSdkVersion="12" android:targetSdkVersion="14"/>
+	
+  <uses-feature android:name="android.hardware.wifi" />
+  
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  
+  <application android:icon="@drawable/icon"
+               android:label="@string/app_name"
+               android:name=".SimpleNewsApplication"
+               android:theme="@android:style/Theme.Holo">
+               
+    <activity android:label="@string/app_name" android:name=".activity.MainActivity" 
+        	  android:configChanges="keyboardHidden|orientation" 
+        	  android:screenOrientation="nosensor"
+        	  android:finishOnTaskLaunch="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    
+    <activity android:name=".activity.ConfigurationActivity" 
+        	android:configChanges="orientation|keyboardHidden"
+			android:excludeFromRecents="true">
+	    <intent-filter>
+	        <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+	    </intent-filter>
+	</activity>
+    <activity android:label="@string/activity_story_list" android:name=".activity.ItemListActivity" 
+        	  android:configChanges="keyboardHidden|orientation" 
+        	  android:excludeFromRecents="true" />
+    
+    <activity android:label="@string/activity_story_details" 
+        	  android:name=".activity.ItemDetailsActivity" 
+        	  android:configChanges="keyboardHidden|orientation" 
+        	  android:noHistory="true"
+        	  android:excludeFromRecents="true" />
+    
+    <activity android:label="@string/activity_file_picker" android:name=".activity.FilePickerActivity" 
+        	  android:configChanges="keyboardHidden|orientation" 
+        	  android:noHistory="true"
+        	  android:excludeFromRecents="true" />
+    
+    <activity android:label="@string/activity_color_picker" android:name=".activity.ColorPickerActivity" 
+        	  android:configChanges="keyboardHidden|orientation" 
+        	  android:noHistory="true"
+        	  android:excludeFromRecents="true" />
+  
+    <activity android:label="Edit theme" android:name=".activity.ThemeDetailsActivity" 
+        	  android:configChanges="keyboardHidden|orientation" 
+        	  android:noHistory="true"
+        	  android:excludeFromRecents="true" />
+    
+    <activity android:label="Edit behaviour" android:name=".activity.BehaviourDetailsActivity" 
+        	  android:configChanges="keyboardHidden|orientation" 
+        	  android:noHistory="true" 
+        	  android:excludeFromRecents="true" />
+    
+    <receiver android:icon="@drawable/default_feed_icon"
+              android:label="@string/app_name"
+              android:name=".receiver.NewsWidgetProvider"
+              android:previewImage="@drawable/widget_preview">
+      <intent-filter>
+      		<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data android:name="android.appwidget.provider"
+                 android:resource="@xml/widget_provider" />
+    </receiver>
+    
+    <receiver android:name=".receiver.WidgetUpdater">
+		<intent-filter>
+			<action android:name="fr.gdi.android.news.ACTION_UPDATE" />
+		</intent-filter>
+	</receiver>
+        
+    <service android:name=".service.UpdateService" />
+    
+    <service android:name=".receiver.NewsWidgetService"
+             android:permission="android.permission.BIND_REMOTEVIEWS" />
+    
+  </application>
+  
+</manifest>
